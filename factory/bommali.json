@@ -1,0 +1,9 @@
+{
+	"name": "bommali",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f39061a-5f71-48af-be4f-675d680fedbd",
+		"tenantId": "a9496a0d-b46f-4956-ad08-f844cebe97b7"
+	}
+}
