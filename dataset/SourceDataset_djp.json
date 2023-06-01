@@ -1,0 +1,35 @@
+{
+	"name": "SourceDataset_djp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "emo",
+				"type": "String"
+			},
+			{
+				"name": "enae",
+				"type": "String"
+			},
+			{
+				"name": "coutry",
+				"type": "String"
+			}
+		]
+	}
+}
