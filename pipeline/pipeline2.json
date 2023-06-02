@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline2",
 	"properties": {
 		"activities": [
 			{
@@ -49,13 +49,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText6",
+						"referenceName": "DelimitedText4",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText7",
+						"referenceName": "DelimitedText5",
 						"type": "DatasetReference"
 					}
 				]
@@ -112,7 +112,7 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "str1",
+					"variableName": "string",
 					"value": {
 						"value": "@string(activity('Copy data1').output)",
 						"type": "Expression"
@@ -121,6 +121,12 @@
 			}
 		],
 		"variables": {
+			"setvariable": {
+				"type": "Boolean"
+			},
+			"string": {
+				"type": "String"
+			},
 			"str1": {
 				"type": "String"
 			}
